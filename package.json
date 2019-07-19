@@ -2,7 +2,7 @@
   "name": "conding-test",
   "version": "1.0.0",
   "description": "Soshace coding test",
-  "main": "index.js",
+  "main": "src/getMaxSum.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
