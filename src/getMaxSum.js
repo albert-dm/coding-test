@@ -17,11 +17,11 @@ const getMaxSum = (values) => {
     const higherPairs = makePairs(highers);
 
     const pairSum = [...lowerPairs, ...higherPairs]
-        .reduce((sum, pair) => pair.length == 1
+        .reduce((sum, pair) => Array.isArray(pair)
             ?
-            sum + pair[0]
-            :
             sum + pair[0] * pair[1]
+            :
+            sum + pair
             , 0);
 
     return pairSum + ones.length;
